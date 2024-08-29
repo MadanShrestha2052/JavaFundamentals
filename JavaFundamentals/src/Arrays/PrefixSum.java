@@ -39,6 +39,8 @@ public class PrefixSum {
 		}
 		System.out.println();
 		System.out.println("The maxSum is: " + maxSum);
+		System.out.println("The maxSum is: " + maxSum);
+
 	}
 
 }
