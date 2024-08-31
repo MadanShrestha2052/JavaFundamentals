@@ -30,7 +30,7 @@ public class PrefixSum {
 //			
 			for(int j = i; j <= arrlength-1; j++) {
 				int end =j;
-				currSum= start==0 ? prefix[end] : prefix[end]- prefix[start-1];
+				 currSum= start==0 ? prefix[end] : prefix[end]- prefix[start-1];
 				if(currSum > maxSum) {
 					maxSum= currSum;
 				}
