@@ -1,7 +1,8 @@
 package stringsToArrays;
 
 // Purpose: Converts a string into an array of strings, with each element representing a single character.
-// How It Works: The chars() method returns an IntStream of the characters in the string, which can then be mapped and collected into an array.
+// How It Works: The chars() method returns an IntStream of the characters in the string,
+// which can then be mapped and collected into an array.
 // Use Case: When you want a functional programming approach using streams.
 
 public class CharlieCharsStreamExample {
@@ -18,4 +19,5 @@ public class CharlieCharsStreamExample {
     }
 }
 
-// Memory Tip: "chars()" indicates dealing directly with characters, and streams provide a modern approach to processing them.
+// Memory Tip: "chars()" indicates dealing directly with characters, and streams provide a modern 
+// approach to processing them.

@@ -13,7 +13,14 @@ public class DeltaToCharArrayExample {
         for (char c : array) {
             System.out.println(c);
         }
+        System.out.println("Char array: " + java.util.Arrays.toString(array)); // Output: [h, e, l, l, o]
+
     }
 }
 
 // Memory Tip: "toCharArray" directly indicates converting a string into an array of characters.
+
+//Single-Dimensional Arrays Only: Arrays.toString() works only with single-dimensional arrays. For multi-dimensional arrays, 
+//you would use Arrays.deepToString().
+//In summary, java.util.Arrays.toString(charArray) is a handy method for converting an array into a string representation that shows the contents of the array
+//in a readable format, making it easier to print and debug arrays in Java.
