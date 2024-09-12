@@ -36,7 +36,7 @@ public class CheckAnagram {
 //		}
 		
 		
-		//1st approach
+		//1st approach  String to Integer
 //		int number = Integer.parseInt(str);
 		
 		//2nd approach
