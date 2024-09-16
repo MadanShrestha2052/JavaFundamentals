@@ -1,6 +1,6 @@
 package LinkedList;
 
-public class LinkedListBegins {
+public class LinkedListAddFirst {
 	
 
 	    // Node class to represent each node in the linked list

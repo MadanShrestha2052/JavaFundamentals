@@ -4,7 +4,7 @@ public class LinkedList {
 
     // Node class to represent each element in the linked list
     // This is a private static nested class, used only by LinkedList
-    private static class Node {
+    public static class Node {
         int data;   // Data stored in the node (in this case, an integer)
         Node next;  // Reference to the next node in the linked list
 
