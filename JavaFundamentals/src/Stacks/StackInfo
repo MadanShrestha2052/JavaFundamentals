@@ -1,0 +1,50 @@
+Key Points about Java's Legacy Stack:
+Implicit Stack: The Stack class is an implicit stack that directly 
+implements the stack operations (push, pop, peek, isEmpty) without 
+needing custom code.
+Legacy Issues:
+Synchronization: Every method in Stack is synchronized, making it 
+slower for single-threaded use cases.
+Inheritance from Vector: The Stack class inherits from Vector, which
+ is not ideal for stack-specific operations.
+Alternative Using Java Collection Framework: Deque (Double-Ended Queue)
+A better alternative to using the legacy Stack class is to use Deque (e.g., ArrayDeque), which is part of the Java Collections Framework and provides stack functionality in a more modern, efficient, and thread-unsafe way (suitable for single-threaded operations).
+
+Why Use ArrayDeque Instead of Stack?
+Performance: ArrayDeque does not have the overhead of synchronization,
+ making it faster for non-concurrent use.
+Modern Design: ArrayDeque is specifically designed for queue and
+ stack-like operations.
+Flexibility: ArrayDeque can be used as both a stack (LIFO) and a queue (FIFO),
+ making it versatile.
+ 
+ ------------------------------------------------
+ 
+ Key Concepts:
+Stack:
+
+Definition: A stack is a data structure that follows the Last-In-First-Out (LIFO) principle, where the last element added is the first one to be removed.
+Operations: The primary operations are push (to add an element), pop (to remove the top element), and peek (to view the top element without removing it).
+Built-in Java Class: The legacy Stack class in Java provides these operations but has performance and design limitations due to synchronization and its inheritance from Vector.
+Queue:
+
+Definition: A queue is a data structure that follows the First-In-First-Out (FIFO) principle, where the first element added is the first one to be removed.
+Operations: The main operations are offer (to add an element), poll (to remove the front element), and peek (to view the front element without removing it).
+Deque (Double-Ended Queue):
+
+Definition: A Deque is a data structure that allows insertion and removal of elements from both ends. It can act as both a stack and a queue, making it a flexible data structure.
+Operations:
+Stack Operations: push (adds to the front), pop (removes from the front), and peek (views the front element).
+Queue Operations: offerLast (adds to the back), pollFirst (removes from the front), peekFirst (views the front), etc.
+Implementation: ArrayDeque and LinkedList are common implementations of Deque.
+Relationship Between Stack, Queue, and Deque:
+Deque as a Stack: You can use Deque to implement stack behavior by using stack-like methods (push, pop, peek). When you use these methods on a Deque, it behaves exactly like a stack but without the limitations of Java's legacy Stack class.
+
+Deque as a Queue: Similarly, by using methods like offerLast, pollFirst, and peekFirst, you can use Deque as a queue.
+
+Why Use ArrayDeque Instead of Stack?
+Performance: ArrayDeque is more efficient than the legacy Stack because it does not synchronize its methods, making it faster for single-threaded use cases.
+
+Versatility: ArrayDeque can act both as a stack and a queue, offering flexibility in implementation.
+
+Design: ArrayDeque is designed specifically for efficient manipulation of elements at both ends, making it a modern replacement for both stacks and queues.
